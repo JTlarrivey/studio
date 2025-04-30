@@ -216,8 +216,8 @@ export function ProductTable({ initialProducts }: ProductTableProps) {
                 <TableRow key={product.id}>
                   <TableCell className="font-medium">{product.id}</TableCell>
                   <TableCell>{product.name}</TableCell>
-                  <TableCell className="text-right">{product.salesData.unitsSold.toLocaleString()}</TableCell>
-                  <TableCell className="text-right">${product.salesData.revenue.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</TableCell>
+                  <TableCell className="text-right">{product.salesData.unitsSold.toLocaleString('en-US')}</TableCell>
+                  <TableCell className="text-right">${product.salesData.revenue.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</TableCell>
                   <TableCell className="text-right space-x-2">
                      <EditProductDialog
                         open={isEditDialogOpen && editingProduct?.id === product.id}
