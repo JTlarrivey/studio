@@ -9,6 +9,8 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.env
+.env.local
 
 # testing
 /coverage
@@ -39,3 +41,12 @@ next-env.d.ts
 
 .genkit/*
 .env*
+
+
+# Firebase
+.firebase/
+firebase-debug.log
+firebase.json.*
+
+# Otros
+.DS_Store
